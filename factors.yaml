@@ -1,0 +1,22 @@
+treatments:
+  - name: quickTest
+    factorIds:
+      - pJSLJrip9ipnBLGe9
+factorTypes:
+  - _id: kvgcxi23n2GW5G8ub
+    name: playerCount
+    description: The Number of players participating in the given game.
+    required: true
+    type: Integer
+    min: 1
+factors:
+  - _id: pJSLJrip9ipnBLGe9
+    name: one
+    value: 1
+    factorTypeId: kvgcxi23n2GW5G8ub
+lobbyConfigs:
+  - name: neverfail
+    timeoutType: lobby
+    timeoutInSeconds: 300
+    timeoutStrategy: ignore
+    gameLobbyIds: []
