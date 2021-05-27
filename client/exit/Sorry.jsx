@@ -34,7 +34,7 @@ export default class Sorry extends Component {
         }
         return (
             <CenterDevWrapper {...this.props}>
-                <div>
+                <div className="container">
                     <h4>Sorry!</h4>
                     <p>Sorry, you were not able to play today! {msg}</p>
                     <p>

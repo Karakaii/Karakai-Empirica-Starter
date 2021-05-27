@@ -7,7 +7,7 @@ export default class Instructions extends Component {
 
         return (
             <CenterDevWrapper {...this.props}>
-                <div>
+                <div className="container">
                     <h2>Instructions</h2>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo assumenda suscipit hic neque doloremque. Voluptatem fuga, optio iusto dolore minima, provident cum a, ex magni voluptate inventore eum voluptatibus?</p>

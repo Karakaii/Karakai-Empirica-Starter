@@ -34,7 +34,7 @@ export default class ExitSurvey extends Component {
 
 		return (
 			<CenterDevWrapper {...this.props}>
-				<div className="text-p">
+				<div className="container">
 					<h2>Exit Survey</h2>
 					<form onSubmit={this.handleSubmit}>
 						<p>Please indicate your gender</p>

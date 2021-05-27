@@ -7,7 +7,7 @@ export default class Round extends React.Component {
 
 		return (
 			<CenterDevWrapper {...this.props}>
-				<div>
+				<div className="container">
 					The Rounds!
 				</div>
 			</CenterDevWrapper>

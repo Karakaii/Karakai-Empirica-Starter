@@ -12,7 +12,7 @@ export default class Thanks extends React.Component {
 
 		return (
 			<CenterDevWrapper {...this.props}>
-				<div>
+				<div className="container">
 					<h4>Finished!</h4>
 					<p>Thank you for participating!</p>
 				</div>

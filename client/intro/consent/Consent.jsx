@@ -6,7 +6,7 @@ export default class Consent extends React.Component {
 	render() {
 		return (
 			<CenterDevWrapper {...this.props}>
-				<div>
+				<div className="container">
 					<h1> Consent Form </h1>
 					<p>
 						This experiment is part of a MIT scientific project. Your decision
