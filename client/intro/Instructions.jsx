@@ -8,11 +8,14 @@ export default class Instructions extends Component {
         return (
             <CenterDevWrapper {...this.props}>
                 <div>
-                    <h2>Here are the instructions</h2>
+                    <h2>Instructions</h2>
 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illo assumenda suscipit hic neque doloremque. Voluptatem fuga, optio iusto dolore minima, provident cum a, ex magni voluptate inventore eum voluptatibus?</p>
+
+                    <br />
                     <div className="flex-c multiple-btns">
                         <button className="main-btn" disabled={!hasPrev} onClick={onPrev}>Previous</button>
-                        <button className="main-btn" disabled={!hasNext} onClick={onNext}>Next</button>
+                        <button className="main-btn" onClick={onNext}>Next</button>
                     </div>
                 </div>
             </CenterDevWrapper>
