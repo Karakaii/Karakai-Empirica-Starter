@@ -12,8 +12,13 @@ import Thanks from "./exit/Thanks"
 import Sorry from "./exit/Sorry"
 import Instructions from "./intro/Instructions"
 
+// Take out elements of the header:
 // Set the About Component you want to use for the About dialog (optional).
 Empirica.about(null)
+// Getting rid of the breadcrums (the progress bar):
+Empirica.breadcrumb(() => null)
+// Get rid of the header, it will be replaced by the dev wrapper than only shows on dev mode
+Empirica.header(() => null)
 
 // Set the component for getting the player id (optional)
 Empirica.newPlayer(NewPlayer)
