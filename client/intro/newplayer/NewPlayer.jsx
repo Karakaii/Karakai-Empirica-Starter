@@ -44,7 +44,7 @@ export default class NewPlayer extends Component {
                         <br />
 
                         <p>
-                            <button class="main-btn" type="submit">Submit</button>
+                            <button className="main-btn" type="submit">Submit</button>
                         </p>
 
                     </form>
