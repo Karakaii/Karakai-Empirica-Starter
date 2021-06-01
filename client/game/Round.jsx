@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CenterDevWrapper from "../wrappers/CenterDevWrapper.jsx"
 
-export default class Round extends React {
+export default class Round extends Component {
 	render() {
 		const { round, stage, player, game } = this.props
 
