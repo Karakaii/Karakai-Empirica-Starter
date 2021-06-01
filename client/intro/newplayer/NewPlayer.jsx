@@ -23,30 +23,31 @@ export default class NewPlayer extends Component {
         return (
             <CenterDevWrapper {...this.props} >
                 <div className="container">
-                    <form onSubmit={this.handleSubmit}>
+                    <form className="flex-col" onSubmit={this.handleSubmit}>
                         <h1>Identification</h1>
 
                         <p>
                             Please enter your id:
                         </p>
 
-                        <input
-                            dir="auto"
-                            type="text"
-                            name="id"
-                            id="id"
-                            value={id}
-                            onChange={this.handleUpdate}
-                            required
-                            autoComplete="off"
-                        />
+                        <p>
+                            <input
+                                dir="auto"
+                                type="text"
+                                name="id"
+                                id="id"
+                                value={id}
+                                onChange={this.handleUpdate}
+                                required
+                                autoComplete="off"
+                            />
+                        </p>
 
                         <br />
 
                         <p>
                             <button className="main-btn" type="submit">Submit</button>
                         </p>
-
                     </form>
                 </div>
             </CenterDevWrapper>
