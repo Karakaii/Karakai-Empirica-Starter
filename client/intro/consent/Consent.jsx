@@ -1,9 +1,22 @@
 import React from "react"
 import { ConsentButton } from "meteor/empirica:core"
 import CenterDevWrapper from "../../wrappers/CenterDevWrapper"
+import { isMobile, isFirefox, isSafari, isChrome } from 'react-device-detect'
 
 export default class Consent extends React.Component {
 	render() {
+
+		if (!(!isMobile && (isFirefox || isChrome))) {
+			return (
+				<CenterDevWrapper {...this.props}>
+					<div className="container">
+						Please use a computer and use Firefox or Chrome.
+					</div>
+				</CenterDevWrapper>
+			)
+		}
+
+
 		return (
 			<CenterDevWrapper {...this.props}>
 				<div className="container">
