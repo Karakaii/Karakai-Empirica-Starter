@@ -15,6 +15,8 @@ Empirica.gameInit(game => {
 		player.set("score", 0)
 	})
 
+	game.set("treatment", game.treatment)
+
 	_.times(10, i => {
 		const round = game.addRound()
 		round.addStage({
