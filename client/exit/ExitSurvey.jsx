@@ -63,7 +63,7 @@ export default class ExitSurvey extends Component {
 						<br />
 						<br />
 
-						<p>If you have any additional comments about the game, please write them here:</p>
+						<p>If you have comments about the study, or a problem occured during the study, please write them here:</p>
 						<textarea
 							name="comment"
 							autoComplete="off"
