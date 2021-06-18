@@ -16,7 +16,23 @@ export default class Thanks extends React.Component {
 					<h4>Finished!</h4>
 					<p>Thank you for participating!</p>
 				</div>
+				<ReturnLink />
 			</CenterDevWrapper>
+		)
+	}
+}
+
+class ReturnLink extends Component {
+	render() {
+		return (
+			<div>
+				<br />
+				<p className="flex-c">
+					<button className="main-btn" onClick={() => { window.location = "https://www.google.com" }}>
+						Complete study on Prolific
+					</button>
+				</p>
+			</div>
 		)
 	}
 }
