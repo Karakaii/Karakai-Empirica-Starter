@@ -12,7 +12,6 @@ import "./callbacks.js"
 Empirica.gameInit(game => {
 	game.players.forEach((player, i) => {
 		player.set("avatar", `/avatars/jdenticon/${player._id}`)
-		player.set("score", 0)
 	})
 
 	game.set("treatment", game.treatment)
