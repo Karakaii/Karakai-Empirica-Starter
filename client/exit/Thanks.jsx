@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import CenterDevWrapper from "../wrappers/CenterDevWrapper"
 
 export default class Thanks extends React.Component {
