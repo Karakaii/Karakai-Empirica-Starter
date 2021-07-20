@@ -11,7 +11,7 @@ export default class Thanks extends React.Component {
 		const { player } = this.props
 		if (!player.get("finishedStudy")) {
 			player.set("finishedStudy", true)
-			player.set("finishStudyAt", new Date(TimeSync.serverTime(null, 1000)))
+			player.set("finishStudyAt", new Date(TimeSync.serverTime(null, 1000)).toISOString())
 		}
 
 		return (
