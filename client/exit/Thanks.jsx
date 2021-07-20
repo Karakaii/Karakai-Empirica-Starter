@@ -1,6 +1,9 @@
 import React, { Component } from "react"
 import CenterDevWrapper from "../wrappers/CenterDevWrapper"
 
+// Allows you to sync time with the server
+import { TimeSync } from "meteor/mizzao:timesync";
+
 export default class Thanks extends React.Component {
 	static stepName = "Thanks"
 
@@ -8,6 +11,7 @@ export default class Thanks extends React.Component {
 		const { player } = this.props
 		if (!player.get("finishedStudy")) {
 			player.set("finishedStudy", true)
+			player.set("finishStudyAt", new Date(TimeSync.serverTime(null, 1000)))
 		}
 
 		return (
