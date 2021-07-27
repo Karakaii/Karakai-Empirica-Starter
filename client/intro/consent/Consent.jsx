@@ -67,7 +67,9 @@ export default class Consent extends React.Component {
 
 					<h3>Statement of Consent</h3>
 					<p>
-						By clicking "I consent" below, you agree that you are at least 18 years of age, speak English, have read the consent form, and voluntarily agree to participate in the study. You may print a copy of this page for your own reference. <br />
+						By clicking "I consent" below, you agree that you are at least 18 years of age, speak English, have read the consent form, and voluntarily agree to participate in the study. You may print a copy of this page for your own reference.
+					</p>
+					<p>
 						If you do not consent to participate, please simply exit the study now.
 					</p>
 
