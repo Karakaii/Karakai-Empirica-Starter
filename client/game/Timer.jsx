@@ -12,10 +12,15 @@ class timer extends React.Component {
 			classes.push("lessThan10")
 		}
 
+		let minutes = Math.floor((remainingSeconds / 60) % 60)
+		let seconds = Math.floor(remainingSeconds % 60)
+		minutes = minutes > 9 ? minutes : `0${minutes}`
+		seconds = seconds > 9 ? seconds : `0${seconds}`
+
 		return (
 			<div className={classes.join(" ")}>
 				<h4>Timer</h4>
-				<span className="seconds">{remainingSeconds}</span>
+				<span className="time">{minutes}:{seconds}</span>
 			</div>
 		)
 	}
