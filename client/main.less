@@ -2,6 +2,10 @@
 - Variables -
 ----------- */
 
+@main-colour: #394B59;
+@2nd-colour: #5f839e;
+@3rd-colour: #b1c3d0;
+
 /* ------
 - Utils -
 ------ */
@@ -47,6 +51,9 @@ li {
     border: none;
     border-radius: 5px;
 
+    background-color: @main-colour;
+    color: white;
+
     cursor: pointer;
 }
 
@@ -54,10 +61,14 @@ li {
     margin: 0 4px;
 }
 
-.main-btn:hover {}
+.main-btn:hover {
+    background-color: @2nd-colour;
+    color: white;
+}
 
 .main-btn:disabled {
     cursor: inherit;
+    background-color: @3rd-colour;
 }
 
 // inputs
