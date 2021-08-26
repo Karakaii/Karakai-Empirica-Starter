@@ -18,5 +18,5 @@ lobbyConfigs:
   - name: 300s fail
     timeoutType: lobby
     timeoutInSeconds: 300
-    timeoutStrategy: ignore
+    timeoutStrategy: fail
     gameLobbyIds: []
