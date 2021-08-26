@@ -15,7 +15,7 @@ factors:
     value: 1
     factorTypeId: kvgcxi23n2GW5G8ub
 lobbyConfigs:
-  - name: neverfail
+  - name: 300s fail
     timeoutType: lobby
     timeoutInSeconds: 300
     timeoutStrategy: ignore
